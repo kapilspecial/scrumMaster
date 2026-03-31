@@ -1,0 +1,867 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy – Saksham Financial Services Pvt. Ltd.</title>
+  <meta name="description" content="Privacy Policy of Saksham Financial Services Pvt. Ltd. Learn how we collect, use, and protect your data." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Lato:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    /* ── Reset & Variables ─────────────────────────────────── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --gold:        #C9A84C;
+      --gold-light:  #E8C96A;
+      --gold-dark:   #9A7C35;
+      --navy:        #1A2D5A;
+      --navy-dark:   #0D1B3E;
+      --navy-light:  #243F7A;
+      --white:       #FFFFFF;
+      --off-white:   #F8F6F0;
+      --text-light:  #D4C8A8;
+      --body-bg:     #060E22;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Lato', sans-serif;
+      background: var(--body-bg);
+      color: var(--white);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      overflow-x: hidden;
+    }
+
+    /* ── Background ────────────────────────────────────────── */
+    .bg-fixed {
+      position: fixed;
+      inset: 0;
+      z-index: 0;
+      background:
+        radial-gradient(ellipse at 15% 40%, rgba(36,63,122,0.55) 0%, transparent 55%),
+        radial-gradient(ellipse at 85% 70%, rgba(26,45,90,0.45) 0%, transparent 55%),
+        linear-gradient(180deg, #060E22 0%, #0D1B3E 60%, #060E22 100%);
+      pointer-events: none;
+    }
+
+    /* ── Header ───────────────────────────────────────────── */
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(6, 14, 34, 0.85);
+      backdrop-filter: blur(14px);
+      border-bottom: 1px solid rgba(201, 168, 76, 0.18);
+    }
+
+    .header-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 16px 40px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+    }
+
+    .header-logo {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      text-decoration: none;
+    }
+
+    .header-logo img {
+      width: 54px;
+      height: 54px;
+      object-fit: contain;
+      filter: drop-shadow(0 2px 8px rgba(201,168,76,0.35));
+    }
+
+    .brand-stack { display: flex; flex-direction: column; }
+
+    .brand-name {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: var(--gold);
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      line-height: 1;
+    }
+
+    .brand-sub {
+      font-size: 0.67rem;
+      color: var(--text-light);
+      letter-spacing: 1.8px;
+      text-transform: uppercase;
+      margin-top: 4px;
+    }
+
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.82rem;
+      color: var(--text-light);
+      text-decoration: none;
+      border: 1px solid rgba(201,168,76,0.25);
+      padding: 8px 16px;
+      border-radius: 50px;
+      transition: color 0.25s, border-color 0.25s, background 0.25s;
+      white-space: nowrap;
+    }
+
+    .back-link:hover {
+      color: var(--gold);
+      border-color: rgba(201,168,76,0.6);
+      background: rgba(201,168,76,0.08);
+    }
+
+    /* ── Hero Banner ──────────────────────────────────────── */
+    .hero-banner {
+      position: relative;
+      z-index: 1;
+      background: linear-gradient(135deg, rgba(26,45,90,0.8) 0%, rgba(13,27,62,0.9) 100%);
+      border-bottom: 1px solid rgba(201,168,76,0.18);
+      padding: 56px 40px 48px;
+      text-align: center;
+      overflow: hidden;
+    }
+
+    .hero-banner::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: repeating-linear-gradient(
+        -45deg,
+        transparent,
+        transparent 30px,
+        rgba(201,168,76,0.025) 30px,
+        rgba(201,168,76,0.025) 60px
+      );
+    }
+
+    .hero-banner-content { position: relative; z-index: 1; }
+
+    .page-label {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(201, 168, 76, 0.1);
+      border: 1px solid rgba(201, 168, 76, 0.35);
+      border-radius: 50px;
+      padding: 7px 18px;
+      font-size: 0.72rem;
+      color: var(--gold-light);
+      letter-spacing: 2.5px;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+
+    .hero-banner h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(1.9rem, 4.5vw, 2.8rem);
+      font-weight: 700;
+      background: linear-gradient(135deg, var(--gold-light), var(--gold), var(--gold-dark));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      margin-bottom: 14px;
+    }
+
+    .hero-banner p {
+      font-size: 0.95rem;
+      color: var(--text-light);
+      max-width: 560px;
+      margin: 0 auto;
+      line-height: 1.7;
+    }
+
+    .gold-divider {
+      width: 60px;
+      height: 2px;
+      background: linear-gradient(90deg, transparent, var(--gold), transparent);
+      margin: 20px auto;
+    }
+
+    /* ── Main Content ─────────────────────────────────────── */
+    .content-wrapper {
+      position: relative;
+      z-index: 1;
+      flex: 1;
+      max-width: 1100px;
+      width: 100%;
+      margin: 0 auto;
+      padding: 48px 40px 64px;
+      display: grid;
+      grid-template-columns: 260px 1fr;
+      gap: 48px;
+      align-items: start;
+    }
+
+    /* ── Sidebar / TOC ────────────────────────────────────── */
+    .sidebar {
+      position: sticky;
+      top: 90px;
+    }
+
+    .sidebar-card {
+      background: rgba(255,255,255,0.03);
+      border: 1px solid rgba(201, 168, 76, 0.18);
+      border-radius: 14px;
+      padding: 24px;
+      margin-bottom: 20px;
+    }
+
+    .sidebar-card h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 0.9rem;
+      color: var(--gold);
+      margin-bottom: 14px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+    .toc-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .toc-list li a {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.82rem;
+      color: var(--text-light);
+      text-decoration: none;
+      padding: 7px 10px;
+      border-radius: 8px;
+      transition: background 0.2s, color 0.2s;
+      line-height: 1.35;
+    }
+
+    .toc-list li a::before {
+      content: '';
+      display: inline-block;
+      width: 4px;
+      height: 4px;
+      border-radius: 50%;
+      background: var(--gold-dark);
+      flex-shrink: 0;
+      transition: background 0.2s;
+    }
+
+    .toc-list li a:hover {
+      color: var(--gold-light);
+      background: rgba(201,168,76,0.08);
+    }
+
+    .toc-list li a:hover::before { background: var(--gold); }
+
+    /* Contact sidebar card */
+    .contact-list {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .contact-row {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+
+    .contact-row .c-label {
+      font-size: 0.67rem;
+      color: var(--gold);
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      font-weight: 600;
+    }
+
+    .contact-row .c-value {
+      font-size: 0.83rem;
+      color: var(--text-light);
+      line-height: 1.5;
+    }
+
+    .contact-row .c-value a {
+      color: inherit;
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    .contact-row .c-value a:hover { color: var(--gold-light); }
+
+    /* ── Policy Body ──────────────────────────────────────── */
+    .policy-body { min-width: 0; }
+
+    .policy-section {
+      margin-bottom: 40px;
+      scroll-margin-top: 100px;
+    }
+
+    .section-header {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 14px;
+    }
+
+    .section-num {
+      width: 34px;
+      height: 34px;
+      border-radius: 50%;
+      border: 1px solid rgba(201,168,76,0.4);
+      background: rgba(201,168,76,0.08);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.8rem;
+      color: var(--gold);
+      font-weight: 700;
+      flex-shrink: 0;
+    }
+
+    .section-header h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.2rem;
+      color: var(--gold-light);
+    }
+
+    .policy-section p,
+    .policy-section ul,
+    .policy-section ol {
+      font-size: 0.9rem;
+      color: var(--text-light);
+      line-height: 1.85;
+    }
+
+    .policy-section ul,
+    .policy-section ol { padding-left: 22px; }
+
+    .policy-section li { margin-bottom: 8px; }
+
+    .policy-section strong { color: rgba(212, 200, 168, 0.9); font-weight: 600; }
+
+    .policy-section a {
+      color: var(--gold-light);
+      text-decoration: none;
+      border-bottom: 1px dashed rgba(201,168,76,0.4);
+      transition: color 0.2s, border-color 0.2s;
+    }
+
+    .policy-section a:hover {
+      color: var(--gold);
+      border-color: var(--gold);
+    }
+
+    .policy-section + .policy-section {
+      border-top: 1px solid rgba(201,168,76,0.1);
+      padding-top: 40px;
+    }
+
+    /* Highlight box */
+    .info-box {
+      background: rgba(201,168,76,0.07);
+      border-left: 3px solid var(--gold);
+      border-radius: 0 10px 10px 0;
+      padding: 16px 20px;
+      margin: 16px 0;
+      font-size: 0.875rem;
+      color: var(--text-light);
+      line-height: 1.75;
+    }
+
+    .info-box strong { color: var(--gold-light); }
+
+    /* ── Footer ──────────────────────────────────────────── */
+    footer {
+      position: relative;
+      z-index: 1;
+      background: rgba(6, 14, 34, 0.92);
+      backdrop-filter: blur(10px);
+      border-top: 1px solid rgba(201, 168, 76, 0.15);
+      padding: 32px 40px;
+    }
+
+    .footer-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .footer-brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .footer-brand img {
+      width: 40px;
+      height: 40px;
+      object-fit: contain;
+      filter: drop-shadow(0 0 6px rgba(201,168,76,0.3));
+    }
+
+    .footer-brand-text .f-name {
+      font-family: 'Playfair Display', serif;
+      font-size: 0.9rem;
+      color: var(--gold);
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+
+    .footer-brand-text .f-sub {
+      font-size: 0.7rem;
+      color: rgba(212,200,168,0.5);
+      letter-spacing: 1px;
+    }
+
+    .footer-links {
+      display: flex;
+      align-items: center;
+      gap: 6px 18px;
+      flex-wrap: wrap;
+    }
+
+    .footer-links a {
+      font-size: 0.8rem;
+      color: var(--text-light);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    .footer-links a:hover { color: var(--gold-light); }
+
+    .footer-sep { color: rgba(201,168,76,0.3); font-size: 0.75rem; }
+
+    .footer-copy {
+      width: 100%;
+      text-align: center;
+      font-size: 0.76rem;
+      color: rgba(212,200,168,0.4);
+      margin-top: 18px;
+      padding-top: 18px;
+      border-top: 1px solid rgba(201,168,76,0.08);
+      line-height: 1.6;
+    }
+
+    /* ── Responsive ──────────────────────────────────────── */
+    @media (max-width: 900px) {
+      .content-wrapper {
+        grid-template-columns: 1fr;
+        padding: 32px 24px 48px;
+      }
+      .sidebar { position: static; }
+    }
+
+    @media (max-width: 600px) {
+      .header-inner { padding: 14px 16px; }
+      .hero-banner { padding: 40px 20px 36px; }
+      .back-link span { display: none; }
+      .footer-inner { flex-direction: column; align-items: center; text-align: center; }
+      footer { padding: 24px 16px; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="bg-fixed" aria-hidden="true"></div>
+
+  <!-- ── Header ──────────────────────────────────────────────── -->
+  <header>
+    <div class="header-inner">
+      <a href="index.html" class="header-logo" aria-label="Saksham Financial Services – Go to Homepage">
+        <img src="https://github.com/user-attachments/assets/5b921d70-80a7-48a3-b93e-f793da7a9c5a"
+             alt="Saksham Logo"
+             onerror="this.style.display='none'" />
+        <div class="brand-stack">
+          <span class="brand-name">Saksham</span>
+          <span class="brand-sub">Financial Services Pvt. Ltd.</span>
+        </div>
+      </a>
+      <a href="index.html" class="back-link" aria-label="Back to homepage">
+        ← <span>Back to Home</span>
+      </a>
+    </div>
+  </header>
+
+  <!-- ── Hero Banner ─────────────────────────────────────────── -->
+  <section class="hero-banner" aria-labelledby="pageTitle">
+    <div class="hero-banner-content">
+      <p class="page-label">🔒 Legal &amp; Compliance</p>
+      <h1 id="pageTitle">Privacy Policy</h1>
+      <div class="gold-divider"></div>
+      <p>
+        This policy outlines how <strong>Saksham Financial Services Pvt. Ltd.</strong>
+        collects, uses, and safeguards your personal and financial information.
+      </p>
+    </div>
+  </section>
+
+  <!-- ── Main ────────────────────────────────────────────────── -->
+  <main class="content-wrapper">
+
+    <!-- Sidebar -->
+    <aside class="sidebar" aria-label="Contents and contact">
+
+      <div class="sidebar-card">
+        <h3>Contents</h3>
+        <ul class="toc-list" role="navigation" aria-label="Table of contents">
+          <li><a href="#s1">Introduction</a></li>
+          <li><a href="#s2">Information We Collect</a></li>
+          <li><a href="#s3">How We Use Your Data</a></li>
+          <li><a href="#s4">Data Sharing</a></li>
+          <li><a href="#s5">Data Security</a></li>
+          <li><a href="#s6">Cookies &amp; Tracking</a></li>
+          <li><a href="#s7">Your Rights</a></li>
+          <li><a href="#s8">Data Retention</a></li>
+          <li><a href="#s9">Third-Party Links</a></li>
+          <li><a href="#s10">Changes to Policy</a></li>
+          <li><a href="#s11">Contact &amp; Grievances</a></li>
+        </ul>
+      </div>
+
+      <div class="sidebar-card">
+        <h3>Contact Us</h3>
+        <div class="contact-list">
+          <div class="contact-row">
+            <span class="c-label">Company</span>
+            <span class="c-value">Saksham Financial Services Pvt. Ltd.</span>
+          </div>
+          <div class="contact-row">
+            <span class="c-label">Address</span>
+            <span class="c-value">
+              123, Finance Tower, MG Road,<br />
+              New Delhi – 110001, India
+            </span>
+          </div>
+          <div class="contact-row">
+            <span class="c-label">Phone</span>
+            <span class="c-value">
+              <a href="tel:">+91-XXXXX-XXXXX</a>
+            </span>
+          </div>
+          <div class="contact-row">
+            <span class="c-label">Email</span>
+            <span class="c-value">
+              <a href="mailto:info@sakshamfinancial.com">info@sakshamfinancial.com</a>
+            </span>
+          </div>
+          <div class="contact-row">
+            <span class="c-label">Privacy Officer</span>
+            <span class="c-value">
+              <a href="mailto:privacy@sakshamfinancial.com">privacy@sakshamfinancial.com</a>
+            </span>
+          </div>
+        </div>
+      </div>
+
+    </aside>
+
+    <!-- Policy Body -->
+    <article class="policy-body">
+
+      <section class="policy-section" id="s1">
+        <div class="section-header">
+          <span class="section-num">1</span>
+          <h2>Introduction</h2>
+        </div>
+        <p>
+          Saksham Financial Services Pvt. Ltd. ("<strong>Company</strong>", "<strong>we</strong>",
+          "<strong>our</strong>", or "<strong>us</strong>") is committed to protecting the privacy
+          and security of your personal information. This Privacy Policy describes how we collect,
+          use, disclose, and protect information about you when you use our website, services,
+          mobile applications, or otherwise interact with us.
+        </p>
+        <div class="info-box">
+          <strong>Effective Date:</strong> This policy is effective as of <strong>1st March 2025</strong>.
+          By using our services, you agree to the collection and use of information in accordance
+          with this policy.
+        </div>
+      </section>
+
+      <section class="policy-section" id="s2">
+        <div class="section-header">
+          <span class="section-num">2</span>
+          <h2>Information We Collect</h2>
+        </div>
+        <p>We may collect the following categories of information:</p>
+        <ul>
+          <li>
+            <strong>Personal Identification Data:</strong> Name, date of birth, PAN card number,
+            Aadhaar number, email address, phone number, and postal address.
+          </li>
+          <li>
+            <strong>Financial Information:</strong> Bank account details, investment preferences,
+            income details, and portfolio information provided voluntarily for advisory purposes.
+          </li>
+          <li>
+            <strong>KYC Documents:</strong> Identity proof, address proof, and photograph as
+            required by SEBI and AMFI regulations.
+          </li>
+          <li>
+            <strong>Technical Data:</strong> IP address, browser type, device information,
+            operating system, and pages visited on our website.
+          </li>
+          <li>
+            <strong>Communication Data:</strong> Messages, emails, calls, and chat logs when
+            you contact us for support or advisory services.
+          </li>
+          <li>
+            <strong>Transaction Data:</strong> Records of transactions, investments, and
+            service usage related to our platform.
+          </li>
+        </ul>
+      </section>
+
+      <section class="policy-section" id="s3">
+        <div class="section-header">
+          <span class="section-num">3</span>
+          <h2>How We Use Your Data</h2>
+        </div>
+        <p>We use your personal data for the following purposes:</p>
+        <ul>
+          <li>To provide and manage our financial advisory and investment services</li>
+          <li>To process your transactions and maintain your account</li>
+          <li>To complete KYC verification as mandated by regulatory authorities</li>
+          <li>To send you important service updates, statements, and notifications</li>
+          <li>To respond to your queries and provide customer support</li>
+          <li>To comply with applicable laws including SEBI, AMFI, RBI, and IT Act regulations</li>
+          <li>To prevent fraud, detect suspicious activity, and ensure platform security</li>
+          <li>To improve our services and develop new products based on usage insights</li>
+          <li>To send you marketing communications (only with your explicit consent)</li>
+        </ul>
+      </section>
+
+      <section class="policy-section" id="s4">
+        <div class="section-header">
+          <span class="section-num">4</span>
+          <h2>Data Sharing &amp; Disclosure</h2>
+        </div>
+        <p>
+          We do <strong>not</strong> sell, rent, or trade your personal information to any
+          third party for marketing purposes. We may share your information only in the
+          following circumstances:
+        </p>
+        <ul>
+          <li>
+            <strong>Regulatory Compliance:</strong> With SEBI, AMFI, income tax authorities,
+            or any government body as required by law.
+          </li>
+          <li>
+            <strong>Service Providers:</strong> With trusted technology and operations vendors
+            who process data on our behalf under strict confidentiality agreements.
+          </li>
+          <li>
+            <strong>Fund Houses / AMCs:</strong> With mutual fund companies or insurance
+            providers to process your investment transactions.
+          </li>
+          <li>
+            <strong>Legal Proceedings:</strong> When required by court order, subpoena, or
+            other lawful process.
+          </li>
+          <li>
+            <strong>Business Transfers:</strong> In the event of a merger, acquisition, or
+            sale of assets, subject to equivalent data protection obligations.
+          </li>
+        </ul>
+      </section>
+
+      <section class="policy-section" id="s5">
+        <div class="section-header">
+          <span class="section-num">5</span>
+          <h2>Data Security</h2>
+        </div>
+        <p>
+          We implement appropriate technical and organisational measures to protect your
+          personal and financial data against unauthorised access, alteration, disclosure,
+          or destruction. These measures include:
+        </p>
+        <ul>
+          <li>256-bit SSL/TLS encryption for all data in transit</li>
+          <li>Secure, encrypted databases for data at rest</li>
+          <li>Role-based access controls limiting data access to authorised personnel only</li>
+          <li>Regular security audits and vulnerability assessments</li>
+          <li>Multi-factor authentication for internal systems</li>
+        </ul>
+        <div class="info-box">
+          While we strive to protect your information, no method of internet transmission is
+          completely secure. We encourage you to use strong, unique passwords and to contact us
+          immediately at <a href="mailto:security@sakshamfinancial.com">security@sakshamfinancial.com</a>
+          if you suspect any unauthorised activity.
+        </div>
+      </section>
+
+      <section class="policy-section" id="s6">
+        <div class="section-header">
+          <span class="section-num">6</span>
+          <h2>Cookies &amp; Tracking Technologies</h2>
+        </div>
+        <p>
+          Our website may use cookies and similar tracking technologies to enhance your
+          browsing experience. Types of cookies we use:
+        </p>
+        <ul>
+          <li><strong>Essential Cookies:</strong> Required for basic website functionality</li>
+          <li><strong>Analytics Cookies:</strong> Help us understand how visitors use our site (anonymised)</li>
+          <li><strong>Preference Cookies:</strong> Remember your settings and preferences</li>
+        </ul>
+        <p>
+          You may disable cookies through your browser settings. Please note that disabling
+          essential cookies may affect the functionality of our website.
+        </p>
+      </section>
+
+      <section class="policy-section" id="s7">
+        <div class="section-header">
+          <span class="section-num">7</span>
+          <h2>Your Rights</h2>
+        </div>
+        <p>
+          Under applicable Indian data protection laws, you have the following rights
+          with respect to your personal data:
+        </p>
+        <ul>
+          <li><strong>Right to Access:</strong> Request a copy of the personal data we hold about you</li>
+          <li><strong>Right to Correction:</strong> Request correction of inaccurate or incomplete information</li>
+          <li><strong>Right to Erasure:</strong> Request deletion of your data, subject to legal retention requirements</li>
+          <li><strong>Right to Portability:</strong> Receive your data in a structured, machine-readable format</li>
+          <li><strong>Right to Object:</strong> Object to processing of your data for marketing purposes</li>
+          <li><strong>Right to Withdraw Consent:</strong> Withdraw consent for processing at any time (without affecting prior lawful processing)</li>
+        </ul>
+        <p>
+          To exercise any of these rights, please contact our Privacy Officer at
+          <a href="mailto:privacy@sakshamfinancial.com">privacy@sakshamfinancial.com</a>.
+          We will respond within 30 days of receiving your request.
+        </p>
+      </section>
+
+      <section class="policy-section" id="s8">
+        <div class="section-header">
+          <span class="section-num">8</span>
+          <h2>Data Retention</h2>
+        </div>
+        <p>
+          We retain your personal data for as long as necessary to provide our services
+          and comply with our legal obligations. Key retention periods:
+        </p>
+        <ul>
+          <li>KYC documents: As mandated by SEBI/AMFI (generally 5–8 years)</li>
+          <li>Transaction records: Minimum 8 years from the date of the last transaction</li>
+          <li>Communication records: 3 years from the date of communication</li>
+          <li>Marketing consent records: Until withdrawn by you</li>
+        </ul>
+        <p>
+          After the applicable retention period, your data is securely deleted or anonymised.
+        </p>
+      </section>
+
+      <section class="policy-section" id="s9">
+        <div class="section-header">
+          <span class="section-num">9</span>
+          <h2>Third-Party Links</h2>
+        </div>
+        <p>
+          Our website may contain links to third-party websites, including market data
+          providers, exchanges, or partner portals. We are not responsible for the privacy
+          practices or content of those external sites. We recommend reviewing their
+          privacy policies before providing any personal information.
+        </p>
+      </section>
+
+      <section class="policy-section" id="s10">
+        <div class="section-header">
+          <span class="section-num">10</span>
+          <h2>Changes to This Policy</h2>
+        </div>
+        <p>
+          We may update this Privacy Policy from time to time to reflect changes in our
+          practices, technology, legal requirements, or other factors. When we make
+          material changes, we will:
+        </p>
+        <ul>
+          <li>Post the updated policy on this page with a new "Last Updated" date</li>
+          <li>Notify registered users via email or in-app notification</li>
+        </ul>
+        <p>
+          Your continued use of our services after the updated policy becomes effective
+          constitutes your acceptance of the revised terms.
+        </p>
+      </section>
+
+      <section class="policy-section" id="s11">
+        <div class="section-header">
+          <span class="section-num">11</span>
+          <h2>Contact &amp; Grievance Redressal</h2>
+        </div>
+        <p>
+          If you have any questions, concerns, or complaints regarding this Privacy Policy
+          or the handling of your personal data, please contact us through any of the
+          following channels:
+        </p>
+        <div class="info-box">
+          <strong>Grievance Officer / Privacy Officer</strong><br />
+          Saksham Financial Services Pvt. Ltd.<br />
+          123, Finance Tower, MG Road, New Delhi – 110001, India<br /><br />
+          📧 <a href="mailto:privacy@sakshamfinancial.com">privacy@sakshamfinancial.com</a><br />
+          📞 <a href="tel:">+91-XXXXX-XXXXX</a><br />
+          ⏰ Monday to Friday, 10:00 AM – 6:00 PM IST
+        </div>
+        <p>
+          We take all privacy complaints seriously and aim to resolve them within
+          <strong>30 working days</strong>. If you are unsatisfied with our response,
+          you may escalate your concern to the relevant regulatory authority.
+        </p>
+        <p style="margin-top: 24px; font-size: 0.8rem; color: rgba(212,200,168,0.5); border-top: 1px solid rgba(201,168,76,0.1); padding-top: 16px; text-align: center;">
+        <em>Last Updated: 1 March 2025 &nbsp;|&nbsp; Version 1.0 &nbsp;|&nbsp; Governed by the laws of India</em>
+        </p>
+      </section>
+
+    </article>
+
+  </main>
+
+  <!-- ── Footer ──────────────────────────────────────────────── -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <img src="https://github.com/user-attachments/assets/5b921d70-80a7-48a3-b93e-f793da7a9c5a"
+             alt="" aria-hidden="true"
+             onerror="this.style.display='none'" />
+        <div class="footer-brand-text">
+          <p class="f-name">Saksham</p>
+          <p class="f-sub">Financial Services Pvt. Ltd.</p>
+        </div>
+      </div>
+
+      <nav class="footer-links" aria-label="Footer links">
+        <a href="index.html">Home</a>
+        <span class="footer-sep" aria-hidden="true">|</span>
+        <a href="privacy-policy.html" aria-current="page">Privacy Policy</a>
+        <span class="footer-sep" aria-hidden="true">|</span>
+        <a href="mailto:info@sakshamfinancial.com">Contact Us</a>
+      </nav>
+    </div>
+    <p class="footer-copy">
+      &copy; <script>document.write(new Date().getFullYear())</script>
+      Saksham Financial Services Pvt. Ltd. All rights reserved. &nbsp;|&nbsp;
+      SEBI Registered &nbsp;|&nbsp; AMFI Member &nbsp;|&nbsp; Registered in India
+    </p>
+  </footer>
+
+</body>
+</html>
