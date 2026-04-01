@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us | Saksham Financial Services Pvt. Ltd.</title>
-    <meta name="description" content="Contact Saksham Financial Services Pvt. Ltd. - AMFI Registered (ARN: 353545). Reach us for Mutual Funds, Insurance, SIP, Tax Planning and Investment Advisory services.">
+    <title>Login | Saksham Financial Services Pvt. Ltd.</title>
+    <meta name="description" content="Login to Saksham Financial Services Pvt. Ltd. - AMFI Registered (ARN: 353545). Access your account to manage Mutual Funds, Insurance, SIP, and Investment services.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -226,7 +226,7 @@
             transform: rotate(-45deg) translate(5px, -6px);
         }
 
-        /* ===== PAGE HERO BANNER ===== */
+        /* ===== PAGE HERO ===== */
         .page-hero {
             background: linear-gradient(135deg, var(--navy) 0%, var(--navy-dark) 100%);
             position: relative;
@@ -290,119 +290,34 @@
             color: rgba(255,255,255,0.35);
         }
 
-        /* ===== SECTION DEFAULTS ===== */
-        .section {
+        /* ===== LOGIN SECTION ===== */
+        .login-section {
             padding: 80px 0;
+            background: var(--off-white);
         }
 
-        .section-header {
-            text-align: center;
-            margin-bottom: 50px;
-        }
-
-        .section-header h2 {
-            font-size: 2.2rem;
-            color: var(--navy);
-            margin-bottom: 12px;
-        }
-
-        .section-header p {
-            color: var(--text-medium);
-            max-width: 600px;
+        .login-card {
+            max-width: 480px;
             margin: 0 auto;
-            font-size: 1rem;
-        }
-
-        .section-header .line {
-            width: 60px;
-            height: 3px;
-            background: var(--gold);
-            margin: 16px auto 0;
-            border-radius: 2px;
-        }
-
-        /* ===== CONTACT INFO CARDS ===== */
-        .contact-cards {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 28px;
-        }
-
-        .contact-card {
             background: var(--white);
-            border-radius: 12px;
-            padding: 36px 28px;
-            text-align: center;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.05);
-            transition: all 0.3s;
-            border: 1px solid transparent;
-        }
-
-        .contact-card:hover {
-            transform: translateY(-6px);
-            box-shadow: 0 12px 36px rgba(0,0,0,0.1);
-            border-color: var(--gold);
-        }
-
-        .contact-card-icon {
-            width: 68px;
-            height: 68px;
-            border-radius: 50%;
-            background: linear-gradient(135deg, var(--navy), #2a4a8a);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin: 0 auto 20px;
-            font-size: 1.8rem;
-        }
-
-        .contact-card h3 {
-            font-size: 1.2rem;
-            color: var(--navy);
-            margin-bottom: 10px;
-        }
-
-        .contact-card p {
-            color: var(--text-medium);
-            font-size: 0.9rem;
-            line-height: 1.7;
-        }
-
-        .contact-card a {
-            color: var(--text-medium);
-            transition: color 0.3s;
-        }
-
-        .contact-card a:hover {
-            color: var(--gold);
-        }
-
-        /* ===== CONTACT FORM & MAP ===== */
-        .contact-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 40px;
-            align-items: start;
-        }
-
-        .contact-form-wrapper {
-            background: var(--white);
-            border-radius: 12px;
-            padding: 40px;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+            border-radius: 16px;
+            padding: 48px 40px;
+            box-shadow: 0 8px 40px rgba(0,0,0,0.08);
             border: 1px solid var(--light-gray);
         }
 
-        .contact-form-wrapper h3 {
-            font-size: 1.5rem;
+        .login-card h2 {
+            font-size: 1.9rem;
             color: var(--navy);
             margin-bottom: 8px;
+            text-align: center;
         }
 
-        .contact-form-wrapper > p {
+        .login-card .login-subtitle {
+            text-align: center;
             color: var(--text-medium);
-            font-size: 0.9rem;
-            margin-bottom: 28px;
+            font-size: 0.92rem;
+            margin-bottom: 32px;
         }
 
         .form-group {
@@ -411,15 +326,13 @@
 
         .form-group label {
             display: block;
-            font-size: 0.88rem;
+            font-size: 0.9rem;
             font-weight: 500;
             color: var(--text-dark);
             margin-bottom: 6px;
         }
 
-        .form-group input,
-        .form-group select,
-        .form-group textarea {
+        .form-group input {
             width: 100%;
             padding: 12px 16px;
             border: 1px solid var(--light-gray);
@@ -432,23 +345,14 @@
             outline: none;
         }
 
-        .form-group input:focus,
-        .form-group select:focus,
-        .form-group textarea:focus {
+        .form-group input:focus {
             border-color: var(--gold);
             box-shadow: 0 0 0 3px rgba(201, 168, 76, 0.12);
             background: var(--white);
         }
 
-        .form-group textarea {
-            resize: vertical;
-            min-height: 120px;
-        }
-
-        .form-row {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 20px;
+        .form-group input.invalid {
+            border-color: #e53935;
         }
 
         .btn {
@@ -480,6 +384,17 @@
             padding: 14px;
         }
 
+        .form-error {
+            display: none;
+            background: #fdecea;
+            border: 1px solid #f5c6cb;
+            border-radius: 8px;
+            padding: 12px 16px;
+            margin-bottom: 20px;
+            color: #c62828;
+            font-size: 0.88rem;
+        }
+
         .form-success {
             display: none;
             background: #e8f5e9;
@@ -504,83 +419,6 @@
         .form-success p {
             color: var(--text-medium);
             font-size: 0.9rem;
-        }
-
-        .form-error {
-            display: none;
-            background: #fdecea;
-            border: 1px solid #f5c6cb;
-            border-radius: 8px;
-            padding: 12px 16px;
-            margin-bottom: 20px;
-            color: #c62828;
-            font-size: 0.88rem;
-        }
-
-        .form-group input.invalid,
-        .form-group select.invalid,
-        .form-group textarea.invalid {
-            border-color: #e53935;
-        }
-
-        .map-wrapper {
-            border-radius: 12px;
-            overflow: hidden;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.05);
-            border: 1px solid var(--light-gray);
-            height: 100%;
-            min-height: 520px;
-        }
-
-        .map-wrapper iframe {
-            width: 100%;
-            height: 100%;
-            min-height: 520px;
-            border: 0;
-            display: block;
-        }
-
-        /* ===== BUSINESS HOURS ===== */
-        .hours-section {
-            background: var(--off-white);
-        }
-
-        .hours-grid {
-            max-width: 600px;
-            margin: 0 auto;
-            background: var(--white);
-            border-radius: 12px;
-            padding: 40px;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.05);
-            border: 1px solid transparent;
-        }
-
-        .hours-row {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 14px 0;
-            border-bottom: 1px solid var(--light-gray);
-        }
-
-        .hours-row:last-child {
-            border-bottom: none;
-        }
-
-        .hours-row .day {
-            font-weight: 500;
-            color: var(--text-dark);
-            font-size: 0.95rem;
-        }
-
-        .hours-row .time {
-            color: var(--text-medium);
-            font-size: 0.95rem;
-        }
-
-        .hours-row .closed {
-            color: #e53935;
-            font-weight: 500;
         }
 
         /* ===== FOOTER ===== */
@@ -704,22 +542,6 @@
             .page-hero h1 {
                 font-size: 2.2rem;
             }
-
-            .contact-cards {
-                grid-template-columns: 1fr 1fr;
-            }
-
-            .contact-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .map-wrapper {
-                min-height: 400px;
-            }
-
-            .map-wrapper iframe {
-                min-height: 400px;
-            }
         }
 
         @media (max-width: 768px) {
@@ -743,10 +565,10 @@
                 left: 0;
                 right: 0;
                 background: var(--white);
-                flex-direction: column;
-                gap: 0;
                 box-shadow: 0 8px 24px rgba(0,0,0,0.1);
-                padding: 12px 0;
+                flex-direction: column;
+                padding: 20px;
+                gap: 0;
             }
 
             .nav-links.open {
@@ -759,54 +581,28 @@
 
             .nav-links a {
                 display: block;
-                padding: 12px 24px;
+                padding: 10px 0;
+                border-bottom: 1px solid var(--light-gray);
             }
 
             .nav-links a::after {
                 display: none;
             }
 
-            .page-hero {
-                padding: 40px 0;
-            }
-
-            .page-hero h1 {
-                font-size: 1.8rem;
-            }
-
-            .section {
-                padding: 50px 0;
-            }
-
-            .contact-cards {
-                grid-template-columns: 1fr;
-            }
-
-            .contact-form-wrapper {
-                padding: 28px 20px;
-            }
-
-            .form-row {
-                grid-template-columns: 1fr;
-            }
-
             .footer-grid {
                 grid-template-columns: 1fr;
-                gap: 30px;
             }
-        }
 
-        @media (max-width: 480px) {
+            .login-card {
+                padding: 32px 24px;
+            }
+
             .page-hero h1 {
                 font-size: 1.5rem;
             }
 
             .logo-text {
                 font-size: 0.95rem;
-            }
-
-            .section-header h2 {
-                font-size: 1.6rem;
             }
         }
     </style>
@@ -852,9 +648,9 @@
                     <li><a href="index.html">Home</a></li>
                     <li><a href="index.html#about">About Us</a></li>
                     <li><a href="index.html#services">Services</a></li>
-                    <li><a href="contact-us.html" class="active">Contact Us</a></li>
+                    <li><a href="contact-us.html">Contact Us</a></li>
                     <li><a href="privacy-policy.html">Privacy Policy</a></li>
-                    <li><a href="login.html">Login</a></li>
+                    <li><a href="login.html" class="active">Login</a></li>
                 </ul>
             </nav>
             <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu">
@@ -868,125 +664,37 @@
     <!-- Page Hero Banner -->
     <section class="page-hero">
         <div class="container">
-            <h1>Contact <span>Us</span></h1>
-            <div class="breadcrumb">
+            <h1>Account <span>Login</span></h1>
+            <p class="breadcrumb">
                 <a href="index.html">Home</a>
                 <span class="separator">&#8250;</span>
-                Contact Us
-            </div>
+                Login
+            </p>
         </div>
     </section>
 
-    <!-- Contact Info Cards -->
-    <section class="section">
+    <!-- Login Section -->
+    <section class="login-section">
         <div class="container">
-            <div class="section-header">
-                <h2>Get In Touch</h2>
-                <p>We'd love to hear from you. Reach out to us through any of the following channels.</p>
-                <div class="line"></div>
-            </div>
-            <div class="contact-cards">
-                <div class="contact-card">
-                    <div class="contact-card-icon">
-                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <div class="login-card">
+                <h2>Welcome Back</h2>
+                <p class="login-subtitle">Sign in to access your financial dashboard</p>
+                <div class="form-error" id="formError"></div>
+                <form id="loginForm" novalidate>
+                    <div class="form-group">
+                        <label for="email">Email / Username *</label>
+                        <input type="text" id="email" name="email" placeholder="Enter your email or username" required>
                     </div>
-                    <h3>Office Address</h3>
-                    <p>Unit no 1042, Tower A, 10th Floor, Spaze I Tech Park, Sector 49, Sohna Road, Gurgaon</p>
-                </div>
-                <div class="contact-card">
-                    <div class="contact-card-icon">
-                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6A19.79 19.79 0 012.12 4.18 2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+                    <div class="form-group">
+                        <label for="password">Password *</label>
+                        <input type="password" id="password" name="password" placeholder="Enter your password" required>
                     </div>
-                    <h3>Phone</h3>
-                    <p><a href="tel:9717176699">9717176699</a><br><a href="tel:9354539966">9354539966</a></p>
-                </div>
-                <div class="contact-card">
-                    <div class="contact-card-icon">
-                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-                    </div>
-                    <h3>Email</h3>
-                    <p><a href="mailto:Support@sakshamfinserv.com">Support@sakshamfinserv.com</a></p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Form & Map -->
-    <section class="section" style="background: var(--off-white); padding-top: 0;">
-        <div class="container" style="padding-top: 80px;">
-            <div class="contact-grid">
-                <div class="contact-form-wrapper">
-                    <h3>Send Us a Message</h3>
-                    <p>Fill out the form below and we'll get back to you as soon as possible.</p>
-                    <form id="contactForm" novalidate>
-                        <div class="form-error" id="formError"></div>
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label for="name">Full Name *</label>
-                                <input type="text" id="name" name="name" placeholder="Enter your full name" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="email">Email Address *</label>
-                                <input type="email" id="email" name="email" placeholder="Enter your email" required>
-                            </div>
-                        </div>
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label for="phone">Phone Number *</label>
-                                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="subject">Subject *</label>
-                                <select id="subject" name="subject" required>
-                                    <option value="">Select a subject</option>
-                                    <option value="General Inquiry">General Inquiry</option>
-                                    <option value="Investment Advisory">Investment Advisory</option>
-                                    <option value="Insurance">Insurance</option>
-                                    <option value="SIP">SIP</option>
-                                    <option value="Tax Planning">Tax Planning</option>
-                                    <option value="Other">Other</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="message">Message *</label>
-                            <textarea id="message" name="message" placeholder="Write your message here..." required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary btn-submit">Send Message</button>
-                    </form>
-                    <div class="form-success" id="formSuccess">
-                        <div class="success-icon">&#10004;</div>
-                        <h4>Thank You!</h4>
-                        <p>Your message has been sent successfully. We'll get back to you within 24–48 hours.</p>
-                    </div>
-                </div>
-                <div class="map-wrapper">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3509.0177307498747!2d77.03812!3d28.4138!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d229aeb4d5b73%3A0x5e2a5e95f43f258b!2sSpaze%20i-Tech%20Park!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Saksham Financial Services Office Location"></iframe>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Business Hours -->
-    <section class="section hours-section">
-        <div class="container">
-            <div class="section-header">
-                <h2>Business Hours</h2>
-                <p>Visit us during our working hours. We're here to help you with all your financial needs.</p>
-                <div class="line"></div>
-            </div>
-            <div class="hours-grid">
-                <div class="hours-row">
-                    <span class="day">Monday – Friday</span>
-                    <span class="time">10:00 AM – 6:00 PM</span>
-                </div>
-                <div class="hours-row">
-                    <span class="day">Saturday</span>
-                    <span class="time">10:00 AM – 2:00 PM</span>
-                </div>
-                <div class="hours-row">
-                    <span class="day">Sunday</span>
-                    <span class="time closed">Closed</span>
+                    <button type="submit" class="btn btn-primary btn-submit">Login</button>
+                </form>
+                <div class="form-success" id="formSuccess">
+                    <div class="success-icon">&#10004;</div>
+                    <h4>Login Successful!</h4>
+                    <p>Welcome back. You are now signed in.</p>
                 </div>
             </div>
         </div>
@@ -1014,6 +722,7 @@
                         <li><a href="index.html#services">&#8250; Services</a></li>
                         <li><a href="contact-us.html">&#8250; Contact Us</a></li>
                         <li><a href="privacy-policy.html">&#8250; Privacy Policy</a></li>
+                        <li><a href="login.html">&#8250; Login</a></li>
                     </ul>
                 </div>
                 <div class="footer-contact">
@@ -1072,12 +781,12 @@
             });
         });
 
-        // Contact Form Handling
-        var contactForm = document.getElementById('contactForm');
+        // Login Form Handling
+        var loginForm = document.getElementById('loginForm');
         var formSuccess = document.getElementById('formSuccess');
         var formError = document.getElementById('formError');
 
-        contactForm.addEventListener('submit', function (e) {
+        loginForm.addEventListener('submit', function (e) {
             e.preventDefault();
 
             // Reset states
@@ -1087,59 +796,28 @@
                 el.classList.remove('invalid');
             });
 
-            var name = document.getElementById('name');
             var email = document.getElementById('email');
-            var phone = document.getElementById('phone');
-            var subject = document.getElementById('subject');
-            var message = document.getElementById('message');
-
+            var password = document.getElementById('password');
             var errors = [];
 
-            if (!name.value.trim()) {
-                errors.push('Full Name is required.');
-                name.classList.add('invalid');
-            }
             if (!email.value.trim()) {
-                errors.push('Email Address is required.');
                 email.classList.add('invalid');
-            } else {
-                var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-                if (!emailPattern.test(email.value.trim())) {
-                    errors.push('Please enter a valid email address.');
-                    email.classList.add('invalid');
-                }
+                errors.push('Email / Username is required.');
             }
-            if (!phone.value.trim()) {
-                errors.push('Phone Number is required.');
-                phone.classList.add('invalid');
-            }
-            if (!subject.value) {
-                errors.push('Please select a subject.');
-                subject.classList.add('invalid');
-            }
-            if (!message.value.trim()) {
-                errors.push('Message is required.');
-                message.classList.add('invalid');
+
+            if (!password.value.trim()) {
+                password.classList.add('invalid');
+                errors.push('Password is required.');
             }
 
             if (errors.length > 0) {
-                formError.textContent = errors[0];
+                formError.textContent = errors.join(' ');
                 formError.style.display = 'block';
                 return;
             }
 
-            // Show success message
-            contactForm.style.display = 'none';
+            loginForm.style.display = 'none';
             formSuccess.style.display = 'block';
-
-            // Reset form
-            contactForm.reset();
-
-            // Hide success after 5 seconds and show form again
-            setTimeout(function () {
-                formSuccess.style.display = 'none';
-                contactForm.style.display = 'block';
-            }, 5000);
         });
     </script>
 </body>
