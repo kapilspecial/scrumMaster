@@ -1140,7 +1140,7 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2025 Saksham Financial Services Pvt. Ltd. All rights reserved.</p>
+                <p>&copy; <span id="copyrightYear"></span> Saksham Financial Services Pvt. Ltd. All rights reserved.</p>
                 <p class="disclaimer">www.sakshamfinserv.com is a website registered with AMFI (ARN: 353545), offers educational content on investments. It does not guarantee returns or financial goal success. Users are advised to consult a financial advisor before making any investment decisions.</p>
             </div>
         </div>
@@ -1150,6 +1150,9 @@
     </footer>
 
     <script>
+        // Set copyright year dynamically
+        document.getElementById('copyrightYear').textContent = new Date().getFullYear();
+
         // Mobile hamburger toggle
         const hamburger = document.getElementById('hamburger');
         const navLinks = document.getElementById('navLinks');
